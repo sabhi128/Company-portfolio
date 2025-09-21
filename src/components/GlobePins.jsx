@@ -4,8 +4,8 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 const LAHORE = {
   country: "Pakistan",
   city: "Lahore",
-  address: "Firdous Market, Block C",
-  phone: "+92 314 1147714",
+  address: "Spaces by Kaizen, Plot, no 31D, 31-D, Block C 3 Gulberg 03, Lahore",
+  phone: "+92 304 4976566",
   lat: 31.5204,
   lng: 74.3587,
   color: "#ffffff",
