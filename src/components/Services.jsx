@@ -43,7 +43,7 @@ const ExactServiceCard = memo(function ExactServiceCard({
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="h-full w-auto border border-slate-200 bg-white px-8 py-8 xl:px-10 xl:py-10 shadow-md rounded-2xl transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+    <div className="h-full w-auto border border-slate-200 bg-white px-8 py-8 xl:px-10 xl:py-10 shadow-md  transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
       {/* Title */}
       <h2 className="text-2xl font-bold mb-4 text-slate-900">{title}</h2>
 
@@ -207,38 +207,37 @@ export default function Services() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-14">
           {/* LEFT sticky info panel (sticky only on lg+) */}
           <aside className="col-span-1 self-start relative z-0 lg:sticky lg:top-24 lg:-ml-6">
-            <div className="space-y-4 bg-white">
-              <div className="text-xs uppercase tracking-wide text-slate-500">
-                Our Services
-              </div>
-              <p className="text-xl font-semibold text-slate-900">
-                Customized &amp; creative marketing solutions for businesses
-              </p>
+  <div className="space-y-4 bg-[#FAF9F6]">
+    <div className="text-xs uppercase tracking-wide text-slate-500">
+      What We Do
+    </div>
+    <p className="text-xl font-semibold text-slate-900">
+      Practical & creative solutions to help your business grow
+    </p>
 
-              <div className="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-md">
-                <div className="relative w-full h-60">
-                  <img
-                    src={`${base}?${query}&w=1200`}
-                    srcSet={srcSet}
-                    sizes="(min-width: 1024px) 384px, 100vw"
-                    alt="Featured project"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <div className="p-5">
-                  <div className="text-sm font-semibold text-slate-900">
-                    Leaside Blvd
-                  </div>
-                  <Link
-                    to="/work/2992-sheppard"
-                    className="mt-2 inline-block text-sm font-semibold underline text-slate-700"
-                  >
-                    Read Our Case
-                  </Link>
-                </div>
-              </div>
+    <div className="overflow-hidden border border-slate-200 bg-white shadow-md">
+      <div className="relative w-full h-60">
+        <img
+          src={`${base}?${query}&w=1200`}
+          srcSet={srcSet}
+          sizes="(min-width: 1024px) 384px, 100vw"
+          alt="Modern office workspace"
+          className="w-full h-full object-cover"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+      <div className="p-5">
+        
+        <Link
+                  to="/"
+                  className="text-black"
+                >
+                  Read our case
+                </Link>
+      </div>
+    </div>
+
 
               <div className="flex items-center gap-3">
                 <Link

@@ -92,4 +92,31 @@
   .animate-marquee {
     animation: marquee var(--speed, 20s) linear infinite;
   }
+
+  /* Hero image responsive utility */
+  .hero-image--cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  /* Mobile optimization for hero images - keeps laptop/subject centered */
+  @media (max-width: 768px) {
+    .hero-image--cover {
+      object-position: center 30%;
+    }
+  }
+
+  /* For background image containers */
+  .hero-bg--cover {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  @media (max-width: 768px) {
+    .hero-bg--cover {
+      background-position: center 30%;
+    }
+  }
 }

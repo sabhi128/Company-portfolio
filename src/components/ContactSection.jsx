@@ -1,92 +1,40 @@
-// src/components/ContactFormFormspree.jsx
+// src/components/ContactFormEmailJS.jsx
 import { useState } from "react";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import emailjs from '@emailjs/browser';
 
-export default function ContactFormFormspree() {
-  const FORMSPREE_ENDPOINT = "https://formspree.io/f/mnnblzdd";
+export default function ContactFormEmailJS() {
+  // EmailJS configuration - Replace with your actual IDs from emailjs.com
+  const EMAILJS_SERVICE_ID = "service_wyjxiwj";
+  const EMAILJS_TEMPLATE_ID = "template_94jbux9"; 
+  const EMAILJS_PUBLIC_KEY = "xwPWhwR1K8CVATRjK";
 
   const [submitting, setSubmitting] = useState(false);
-  const [form, setForm] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    service: "",
-    hearAbout: "",
-    budget: "",
-    message: "",
-    file: null,
-  });
+  const [status, setStatus] = useState({ state: "idle", msg: "" });
 
-  const onChange = (e) => {
-    const { name, value, files, type } = e.target;
-    // Only take a file when there is at least one file
-    if (type === "file") {
-      setForm((f) => ({ ...f, [name]: files && files.length > 0 ? files[0] : null }));
-    } else {
-      setForm((f) => ({ ...f, [name]: value ?? "" }));
-    }
-  };
-
-  // 1) Replace your handleSubmit with this:
-async function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     setSubmitting(true);
-  
-    const fd = new FormData();
-    Object.entries(form).forEach(([k, v]) => {
-      if (v !== null && v !== undefined) fd.append(k, v);
-    });
-    fd.append("_subject", "New Contact Submission — Webify Tech");
-  
+    const form = e.currentTarget;
+    
     try {
-      const res = await fetch(FORMSPREE_ENDPOINT, {
-        method: "POST",
-        body: fd,
-        headers: { Accept: "application/json" },
-        // mode: "cors", // not required, but you can uncomment
-      });
-  
-      // If fetch reached the server but got a non-2xx response:
-      if (!res.ok) {
-        const text = await res.text(); // get raw toasts for debugging
-        let message = "Submission failed.";
-        try {
-          const data = JSON.parse(text);
-          if (data?.errors?.length) {
-            message = data.errors.map((e) => e.message).join(", ");
-          }
-        } catch {
-          // not JSON → keep text snippet if helpful
-          if (text) message = text.slice(0, 200);
-        }
-        console.error("Formspree non-OK:", res.status, message);
-        toast.error("❌ " + message);
-        return;
+      const result = await emailjs.sendForm(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        form,
+        EMAILJS_PUBLIC_KEY
+      );
+
+      console.log('EmailJS success:', result.text);
+      
+      // Reset form DOM element safely
+      if (form) {
+        form.reset();
       }
-  
-      // Success
-      setForm({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        service: "",
-        hearAbout: "",
-        budget: "",
-        message: "",
-        file: null,
-      });
-      e.currentTarget.reset();
-      toast.success("✅ Thanks! Your message has been sent.");
-    } catch (err) {
-      // This is the true “network error” (CORS/ad-block/offline)
-      console.error("Network/CORS error posting to Formspree:", err);
-      const hint =
-        "This is usually caused by an ad-blocker or CORS (Allowed Domains). " +
-        "Try disabling extensions, adding your localhost to Allowed Domains, or testing another network.";
-      toast.error("⚠️ Network error. " + hint);
+      
+      setStatus({ state: "success", msg: "✅ Thanks! Your message has been sent." });
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      setStatus({ state: "error", msg: "❌ Failed to send message. Please try again." });
     } finally {
       setSubmitting(false);
     }
@@ -130,8 +78,6 @@ async function handleSubmit(e) {
                 </a>
               </div>
             </div>
-
-        
           </div>
 
           {/* Right column — form */}
@@ -140,9 +86,6 @@ async function handleSubmit(e) {
               onSubmit={handleSubmit}
               className="relative z-[100] overflow-visible bg-white p-6 sm:p-8"
             >
-              {/* Honeypot */}
-              <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
-
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className={label} htmlFor="firstName">
@@ -154,8 +97,6 @@ async function handleSubmit(e) {
                     type="text"
                     required
                     className={baseInput}
-                    value={form.firstName}
-                    onChange={onChange}
                   />
                 </div>
 
@@ -166,8 +107,6 @@ async function handleSubmit(e) {
                     name="lastName"
                     type="text"
                     className={baseInput}
-                    value={form.lastName}
-                    onChange={onChange}
                   />
                 </div>
 
@@ -181,8 +120,6 @@ async function handleSubmit(e) {
                     type="email"
                     required
                     className={baseInput}
-                    value={form.email}
-                    onChange={onChange}
                     autoComplete="email"
                   />
                 </div>
@@ -195,10 +132,8 @@ async function handleSubmit(e) {
                     id="phone"
                     name="phone"
                     type="tel"
-                    
+                    required
                     className={baseInput}
-                    value={form.phone}
-                    onChange={onChange}
                     autoComplete="tel"
                   />
                 </div>
@@ -212,8 +147,7 @@ async function handleSubmit(e) {
                     name="service"
                     required
                     className={selectClass}
-                    value={form.service}
-                    onChange={onChange}
+                    defaultValue=""
                   >
                     <option value="">Please Select</option>
                     <option value="Website Design">Website Design</option>
@@ -231,8 +165,7 @@ async function handleSubmit(e) {
                     id="hearAbout"
                     name="hearAbout"
                     className={selectClass}
-                    value={form.hearAbout}
-                    onChange={onChange}
+                    defaultValue=""
                   >
                     <option value="">Please Select</option>
                     <option value="Google">Google</option>
@@ -250,10 +183,9 @@ async function handleSubmit(e) {
                   <select
                     id="budget"
                     name="budget"
-                    
+                    required
                     className={selectClass}
-                    value={form.budget}
-                    onChange={onChange}
+                    defaultValue=""
                   >
                     <option value="">Select</option>
                     <option value="$2k – $5k">$2k – $5k</option>
@@ -270,24 +202,12 @@ async function handleSubmit(e) {
                   <textarea
                     id="message"
                     name="message"
-                    
+                    required
                     rows={5}
                     className={baseInput}
-                    value={form.message}
-                    onChange={onChange}
                   />
                 </div>
 
-                <div className="sm:col-span-2">
-                  <label className={label} htmlFor="file">File upload</label>
-                  <input
-                    id="file"
-                    name="file"
-                    type="file"
-                    className="block text-sm text-slate-700 file:mr-4 file:rounded-lg file:border-0 file:bg-slate-900 file:px-4 file:py-2 file:text-white file:text-sm hover:file:opacity-90"
-                    onChange={onChange}
-                  />
-                </div>
               </div>
 
               <div className="mt-6">
@@ -298,6 +218,13 @@ async function handleSubmit(e) {
                 >
                   {submitting ? "Submitting..." : "Submit"}
                 </button>
+                
+                {status.state === "success" && (
+                  <p className="mt-3 text-sm text-emerald-700">{status.msg}</p>
+                )}
+                {status.state === "error" && (
+                  <p className="mt-3 text-sm text-red-700">{status.msg}</p>
+                )}
               </div>
             </form>
 
@@ -320,27 +247,6 @@ async function handleSubmit(e) {
           </div>
         </div>
       </div>
-
-           {/* Toast notifications */}
-           <ToastContainer
-  position="top-right"
-  autoClose={4000}
-  hideProgressBar={false}
-  newestOnTop
-  closeOnClick
-  pauseOnFocusLoss
-  draggable
-  pauseOnHover
-  toastStyle={{
-    background: "#0B1220",
-    color: "#ffffff",
-    borderRadius: "0.75rem",
-    fontSize: "0.9rem",
-    zIndex: 50,
-    marginTop: "calc(var(--nav-h) + 40px)" 
-  }}
-/>
-
     </section>
   );
 }

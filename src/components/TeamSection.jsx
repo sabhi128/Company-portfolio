@@ -8,7 +8,7 @@ const TEAM = [
     img: "/mub.jpg",
   },
   {
-    name: "Owais",
+    name: "M. Awais",
     role: "Head of E-commerce",
     bio: "Owns marketplace strategy, catalog operations, and conversion optimization powered by data.",
     img: "/awa.jpg",

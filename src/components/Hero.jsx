@@ -11,14 +11,18 @@ export default function Hero({
   overlayClass = "bg-gradient-to-b from-black/25 via-black/20 to-black/55",
   titleLines = ["Innovative", "Software Solutions"],
   subtitle = null,
-  pills = ["Web Design Agency", "Marketing Agency", "Publication and Media"],
+    pills = [
+  "Build Your Website",
+  "Grow Your Audience",
+  "Share Your Story"
+],
   featured = [],
   showRightPanel = true,
   brand = "Webify Tech",
   aboutTop = "At Webify Tech, we deliver innovative software solutions, modern websites, and digital strategies that help businesses thrive.",
   aboutBody = "We specialize in designing, developing, and scaling web, mobile, and cloud applications tailored to your goals and growth.",
   ctas = [
-    { label: "Request a Proposal", href: "/contact", primary: true },
+    { label: "Request a Proposal", href: "/proposalrequest", primary: true },
     { label: "Let's Discuss", href: "/contact", primary: false },
   ],
   titleColor = "text-white",
