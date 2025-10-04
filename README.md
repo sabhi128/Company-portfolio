@@ -48,7 +48,7 @@ Built with **React + Vite**, **Tailwind CSS**, and **Framer Motion** for a respo
 
 ## 📂 Project Structure
 
-webify-tech-portfolio/
+Nextstac-portfolio/
 ├── public/ # Static assets (images, icons)
 ├── src/
 │ ├── components/ # Reusable UI components (Hero, Navbar, Portfolio, etc.)
@@ -67,8 +67,8 @@ webify-tech-portfolio/
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/yourusername/webify-tech-portfolio.git
-   cd webify-tech-portfolio
+   git clone https://github.com/yourusername/Company-portfolio.git
+   cd Company-portfolio
 Install dependencies:
 
 bash
