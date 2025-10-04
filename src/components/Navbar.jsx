@@ -304,7 +304,7 @@ export default function Navbar() {
               }}
             >
               <span className="inline-grid place-items-center h-6 w-6 rounded-full bg-white text-black text-xs font-bold">
-                WT
+                NS
               </span>
               <span className="text-xs font-medium">NextStac</span>
             </Link>
