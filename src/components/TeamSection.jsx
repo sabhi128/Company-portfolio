@@ -9,7 +9,7 @@ const TEAM = [
   },
   {
     name: "M. Awais",
-    role: "Head of E-commerce",
+    role: "Co-Founder ",
     bio: "Owns marketplace strategy, catalog operations, and conversion optimization powered by data.",
     img: "/awa.jpg",
   },
@@ -17,7 +17,7 @@ const TEAM = [
   
   {
     name: "Muneeb Mustafa",
-    role: "E-commerce Specialist",
+    role: "Head of E-commerce",
     bio: "Manages storefronts, listings, promotions, and performance to drive revenue and retention.",
     img: "/munn.jpg",
   },
@@ -31,7 +31,7 @@ const TEAM = [
   
   {
     name: "Muhammad Musa",
-    role: "Business Development Associate",
+    role: "Business Developer",
     bio: "Prospecting, outreach, and discovery—turns opportunities into long-term client relationships.",
     img: "/mus.jpg",
   },
