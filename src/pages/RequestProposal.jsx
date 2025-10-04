@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import FooterIntro from "../components/FooterIntro";
 const logo = [
-  { src: "webify.jpeg", alt: "Acme" },
+  { src: "favicon.png", alt: "Acme" },
 ];
 
 const faqs = [
@@ -113,7 +113,7 @@ export default function RequestProposal() {
             {/* Testimonial */}
             <div className="rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.02] p-5">
               <p className="text-sm text-slate-200">
-                “Webify Tech translated our vision into a clean, high-converting site. Smooth process, on time, on budget.”
+                “Nextstac translated our vision into a clean, high-converting site. Smooth process, on time, on budget.”
               </p>
               <div className="mt-3 text-xs text-slate-400">— Sarah M., Head of Growth</div>
             </div>
@@ -125,8 +125,8 @@ export default function RequestProposal() {
                 Email us your brief and we’ll reply within a business day.
               </p>
               <div className="mt-3 flex flex-wrap gap-3 text-sm">
-                <a href="mailto:hello@webifytech.com" className="rounded-xl border border-white/10 px-3 py-2 hover:bg-white/10">
-                  hello@webifytech.com
+                <a href="mailto:mubashir@nextstac.com" className="rounded-xl border border-white/10 px-3 py-2 hover:bg-white/10">
+                  mubashir@nextstac.com
                 </a>
                 <a href="https://wa.me/123456789" target="_blank" rel="noreferrer" className="rounded-xl border border-white/10 px-3 py-2 hover:bg-white/10">
                   WhatsApp
@@ -185,7 +185,7 @@ export default function RequestProposal() {
             }} className="rounded-xl bg-white text-black px-4 py-2 text-sm font-semibold hover:opacity-90">
               Book a Call
             </a>
-            <a href="mailto:hello@webifytech.com" className="rounded-xl border border-white/20 px-4 py-2 text-sm hover:bg-white/10">
+            <a href="mailto:mubashir@nextstac.com" className="rounded-xl border border-white/20 px-4 py-2 text-sm hover:bg-white/10">
               Email Brief
             </a>
           </div>

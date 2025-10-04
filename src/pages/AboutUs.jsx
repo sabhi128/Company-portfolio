@@ -23,14 +23,14 @@ export default function AboutUs() {
          imgMobile="Aboutus.jpg"
        
          // Left content
-         titleLines={["We Are Webify Tech."]}
+         titleLines={["We Are Nextstac."]}
          subtitle="A web design and branding agency headquartered in Pakistan and Canada."
          featured={[
-           { src: "webify.jpeg", alt: "AP", height: 35 },
+           { src: "/favicon.png", alt: "AP", height: 35 },
          ]}
        
          // Right content (single paragraph for About)
-         aboutTop={`At Webify tech, our primary goal is achieving outstanding results for our clients. Our adaptive team offers a broad range of marketing services, custom-tailored to each client's unique needs. By continuously updating our strategies with the latest marketing trends, we ensure effective engagement with various customer groups. Our dedicated approach often surpasses client expectations, fostering a tradition of success and satisfaction.`}
+         aboutTop={`At Nextstac, our primary goal is achieving outstanding results for our clients. Our adaptive team offers a broad range of marketing services, custom-tailored to each client's unique needs. By continuously updating our strategies with the latest marketing trends, we ensure effective engagement with various customer groups. Our dedicated approach often surpasses client expectations, fostering a tradition of success and satisfaction.`}
        
          // Keep right panel visible on About
          showRightPanel

@@ -293,7 +293,7 @@ const WebsiteDesign = () => {
       title: "Extensive Industry Expertise and",
       highlight: "Client-Focused Solutions",
       description:
-        "At Webify Tech, we leverage deep industry knowledge to craft tailored website solutions that fit your unique goals. Every project is designed around your business objectives—not a one-size-fits-all model—ensuring precision, relevance, and measurable impact that helps your brand stand out in the market.",
+        "At Nextstac, we leverage deep industry knowledge to craft tailored website solutions that fit your unique goals. Every project is designed around your business objectives—not a one-size-fits-all model—ensuring precision, relevance, and measurable impact that helps your brand stand out in the market.",
       image:
         "https://cdn.prod.website-files.com/630bc5625ada9a1e2dbb10a6/661d4d7cf9b52a7779e62f10_Flipp.avif",
     },
@@ -302,7 +302,7 @@ const WebsiteDesign = () => {
       title: "Award-Winning Talent and",
       highlight: "Senior-Level Expertise",
       description:
-        "From start to finish, your project is guided by senior professionals with proven, award-winning experience in branding, design, and user experience. At Webify Tech, our hands-on approach ensures innovative, high-quality solutions that consistently exceed client expectations.",
+        "From start to finish, your project is guided by senior professionals with proven, award-winning experience in branding, design, and user experience. At Nextstac, our hands-on approach ensures innovative, high-quality solutions that consistently exceed client expectations.",
       image:
         "https://cdn.prod.website-files.com/630bc5625ada9a1e2dbb10a6/661d4d7b765b6b416fa0eb20_Retina.avif",
     },
@@ -311,7 +311,7 @@ const WebsiteDesign = () => {
       title: "Modern, Visionary, and",
       highlight: "Tailored Design",
       description:
-        "We stay ahead of trends to deliver designs that are not only current but also forward-thinking. Each Webify Tech project is crafted to reflect your unique brand identity, industry, and goals—ensuring a custom design that is both timeless and adaptable to evolving market demands.",
+        "We stay ahead of trends to deliver designs that are not only current but also forward-thinking. Each Nextstac project is crafted to reflect your unique brand identity, industry, and goals—ensuring a custom design that is both timeless and adaptable to evolving market demands.",
       image:
         "https://cdn.prod.website-files.com/630bc5625ada9a1e2dbb10a6/661d4d7bcf37920bc03e72f4_ReadyMode.avif",
     },
@@ -517,7 +517,7 @@ const WebsiteDesign = () => {
               <div className="flex-1 text-gray-200 space-y-6 text-sm md:text-base leading-relaxed">
                 <p>
                   Your website is often the first interaction customers have with your brand—so it
-                  needs to be more than just visually appealing. At <strong>Webify Tech</strong>, we
+                  needs to be more than just visually appealing. At <strong>Nextstac</strong>, we
                   craft sites that blend stunning design with seamless usability, helping your business
                   stand out in a crowded digital landscape.
                 </p>

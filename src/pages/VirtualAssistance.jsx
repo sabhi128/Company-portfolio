@@ -237,7 +237,7 @@ const VirtualAssistance = () => {
 
               <div className="flex-1 text-gray-200 space-y-6 text-sm md:text-base leading-relaxed">
                 <p>
-                  <strong>Webify Tech</strong> supplies dedicated Virtual Assistants who
+                  <strong>Nextstac</strong> supplies dedicated Virtual Assistants who
                   take on your admin, inbox & calendar, customer support, research, CRM
                   updates, and operations—so your team can focus on high-leverage work.
                 </p>

@@ -17,7 +17,7 @@ export default function Home() {
   imgMobile="Contact.jpg"
   overlayClass="bg-gray-700"
 
-  titleLines={['Lets Get Started With Webify Tech']}
+  titleLines={['Lets Get Started With Nextstac']}
   titleColor="text-white"        // <-- make title black
   subtitle="Contact us to discuss your inquiry, and we'll get back to you shortly."
 />

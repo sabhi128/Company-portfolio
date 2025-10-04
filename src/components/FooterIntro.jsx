@@ -11,9 +11,9 @@ import GlobePins from "./GlobePins";
 
 export default function FooterIntro() {
   const socials = [
-    { href: "https://www.instagram.com/webify.tech/", label: "Instagram", Icon: FaInstagram },
-    { href: "https://www.facebook.com/webifytechnologies", label: "Facebook", Icon: FaFacebookF },
-    { href: "https://www.linkedin.com/company/webify-tech/?viewAsMember=true", label: "LinkedIn", Icon: FaLinkedinIn },
+    { href: "/", label: "Instagram", Icon: FaInstagram },
+    { href: "/", label: "Facebook", Icon: FaFacebookF },
+    { href: "/", label: "LinkedIn", Icon: FaLinkedinIn },
     { href: "/", label: "X (Twitter)", Icon: FaXTwitter },
   ];
 

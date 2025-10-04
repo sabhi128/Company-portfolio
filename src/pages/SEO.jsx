@@ -362,7 +362,7 @@ const SEO = () => {
         topText="Top SEO Company"
         heading="We grow your organic traffic"
         subHeading="and turn rankings into revenue."
-        description="Webify Tech delivers complete SEO—technical, on-page, off-page, and local—tailored to your market. We audit, optimize, and build authority to improve search visibility, increase qualified traffic, and drive measurable business results."
+        description="Nextstac delivers complete SEO—technical, on-page, off-page, and local—tailored to your market. We audit, optimize, and build authority to improve search visibility, increase qualified traffic, and drive measurable business results."
       />
 
       {/* BIG SPLIT SECTION — rewrite headline/paragraphs for SEO */}
