@@ -1,6 +1,6 @@
-# Webify Tech — Portfolio
+# Nextstac — Portfolio
 
-A modern portfolio website for **Webify Tech**, showcasing software services, case studies, and client achievements.  
+A modern portfolio website for **Nextstac**, showcasing software services, case studies, and client achievements.  
 Built with **React + Vite**, **Tailwind CSS**, and **Framer Motion** for a responsive, performant, and animated experience.
 
 ---
@@ -9,7 +9,7 @@ Built with **React + Vite**, **Tailwind CSS**, and **Framer Motion** for a respo
 
 - **Responsive Hero Sections**  
   Full-bleed background images with gradient overlays and mobile-safe `svh/dvh` viewport units.  
-  Dynamic titles/subtitles highlighting Webify Tech’s software services.
+  Dynamic titles/subtitles highlighting Nextstac’s software services.
 
 - **Work Portfolio (Case Studies)**  
   - Categorized case studies: Consultation & Audit, SEO, Branding, Web Development, Web Design, UI/UX.  
@@ -114,5 +114,5 @@ This project is licensed under the MIT License.
 You are free to use, modify, and distribute for personal or commercial purposes.
 
 👨‍💻 Author
-Webify Tech Team
+Nextstac Team
 Building scalable software, modern websites, and impactful digital strategies.
