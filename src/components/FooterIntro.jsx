@@ -48,10 +48,10 @@ export default function FooterIntro() {
           {/* Left: brand, description, then the lists */}
           <div className="md:col-span-6">
             <span className="font-['Dancing_Script'] text-[clamp(22px,4vw,30px)] tracking-tight">
-              WebifyTech
+              NextStac
             </span>
             <p className="mt-5 max-w-sm text-base text-white/80">
-              We are Webify Tech, a media company and an award-winning marketing
+              We are NextStac, a media company and an award-winning marketing
               and web design agency.
             </p>
 

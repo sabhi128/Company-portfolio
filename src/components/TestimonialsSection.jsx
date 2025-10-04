@@ -21,14 +21,14 @@ function StaticCompanyCard({ prefersReducedMotion = false }) {
       <div className="flex flex-col gap-5">
         <img
           src="/TesSecImg.jpg"
-          alt="Webify Tech office"
+          alt="NextStac office"
           className="h-32 w-full object-cover rounded-xl"
           loading="lazy"
           decoding="async"
           sizes="(min-width: 768px) 33vw, 100vw"
         />
         <div>
-          <h3 className="text-xl font-semibold text-slate-900">Webify Tech</h3>
+          <h3 className="text-xl font-semibold text-slate-900">NextStac</h3>
           <p className="mt-1.5 text-sm text-slate-600">
             Our vision is to craft premium, performant web experiences that grow with your business —
             merging clean UX, modern engineering, and measurable outcomes.
@@ -99,7 +99,7 @@ export default function TestimonialsSection() {
   // only compute once
   const testimonials = useMemo(
     () => [
-      { title: "Communication was simple and fast.", body: "Webify Tech delivered a requirement-accurate website with smooth animations. Responsive team and deep technical knowledge.", author: "Jim Willis", role: "CEO, Kinshasa Lifestyle" },
+      { title: "Communication was simple and fast.", body: "NextStac delivered a requirement-accurate website with smooth animations. Responsive team and deep technical knowledge.", author: "Jim Willis", role: "CEO, Kinshasa Lifestyle" },
       { title: "We built a great website together.", body: "Visually pleasing design, engaging interactions, and on-time delivery. Their process was organized and transparent.", author: "Brian Mendoza", role: "Project Manager, Mendoza Firm" },
       { title: "Exactly what we wanted.", body: "They created a beautiful brand + site that helped us stand out. Communication and responsiveness were exceptional.", author: "Sean Alberto", role: "Marketing Director, Omni Management" },
       { title: "Exceeded expectations.", body: "Over 700 registrations after launch. Strategy, design, and execution resonated with our audience.", author: "Jordan Kianzad", role: "Marketing Coordinator, Winona Towns LTD" },
@@ -107,7 +107,7 @@ export default function TestimonialsSection() {
       { title: "A seamless collaboration.", body: "From kickoff to delivery, the process was transparent. They listened closely to our needs and translated them into an elegant product.", author: "Daniel Lee", role: "Founder, UrbanHive Digital" },
       { title: "True design innovators.", body: "The UI/UX strategy gave our platform a modern, user-friendly look. Feedback from our users has been overwhelmingly positive.", author: "Sophia Martinez", role: "Product Lead, Horizon Media" },
       { title: "Outstanding reliability.", body: "We appreciated their responsiveness and ability to solve complex challenges quickly. The final site exceeded our technical requirements.", author: "Michael Chen", role: "CTO, Nova Systems" },
-      { title: "A valuable long-term partner.", body: "We’ve worked with many agencies, but Webify Tech consistently outperformed expectations. They are now our go-to partner for digital work.", author: "Rachel Adams", role: "Managing Director, Corestone Ventures" },
+      { title: "A valuable long-term partner.", body: "We’ve worked with many agencies, but NextStac consistently outperformed expectations. They are now our go-to partner for digital work.", author: "Rachel Adams", role: "Managing Director, Corestone Ventures" },
       { title: "Impressive results.", body: "Our website traffic increased by 65% post-launch, and conversions improved significantly. Their mix of creativity and strategy is rare.", author: "Omar Siddiqui", role: "Head of Marketing, Zenith Global" },
     ],
     []

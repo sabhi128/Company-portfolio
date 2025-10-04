@@ -6,7 +6,7 @@ const TABS = ["All", "Website", "Branding"];
 const faqs = [
   // --- All (shared) ---
   {
-    q: "Why partner with Webify?",
+    q: "Why partner with NextStac?",
     a: `We lead with clarity, craft, and honest process. We take on work where our experience makes a visible difference—then deliver it with tight communication and measurable outcomes. Our team’s work is consistently top-rated across industry platforms.`,
     cat: "All",
   },
@@ -254,7 +254,7 @@ export default function FaqsSection() {
             </h2>
 
             <p className="mt-4 text-slate-600 text-base leading-7">
-              Curious about how Webify Tech operates? Explore our FAQ section
+              Curious about how NextStac operates? Explore our FAQ section
               for a comprehensive understanding of our services and procedures.
             </p>
 

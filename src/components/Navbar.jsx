@@ -134,7 +134,7 @@ export default function Navbar() {
         <Link
           to="/"
           className="flex items-center gap-1 !pl-0 min-w-0"
-          aria-label="Webify Tech — Home"
+          aria-label="NextStac — Home"
         >
           <span
             className={cx(
@@ -144,7 +144,7 @@ export default function Navbar() {
                 : "text-[clamp(26px,5vw,36px)] text-white"
             )}
           >
-            Webify Tech
+            NextStac
           </span>
         </Link>
 
@@ -306,7 +306,7 @@ export default function Navbar() {
               <span className="inline-grid place-items-center h-6 w-6 rounded-full bg-white text-black text-xs font-bold">
                 WT
               </span>
-              <span className="text-xs font-medium">Webify Tech</span>
+              <span className="text-xs font-medium">NextStac</span>
             </Link>
           </div>
         </div>

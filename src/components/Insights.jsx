@@ -157,7 +157,7 @@ export default function Insights() {
         <div className="flex items-center justify-between py-8">
           <a href="#" className="flex items-center gap-3">
             <div className="text-xl font-semibold tracking-wide">
-              <span className=" text-2xl opacity-80">Webify Tech</span>{" "}
+              <span className=" text-2xl opacity-80">NextStac</span>{" "}
               <span className="italic text-primary">Insights</span>
             </div>
           </a>

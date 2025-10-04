@@ -13,12 +13,7 @@ const TEAM = [
     bio: "Owns marketplace strategy, catalog operations, and conversion optimization powered by data.",
     img: "/awa.jpg",
   },
-  {
-    name: "Muneeb Tariq",
-    role: "Business Development Manager",
-    bio: "Builds pipelines and proposals, aligns client needs with scope, and delivers WordPress solutions end-to-end.",
-    img: "/mun.jpg",
-  },
+
   
   {
     name: "Muneeb Mustafa",

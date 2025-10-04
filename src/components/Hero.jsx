@@ -18,8 +18,8 @@ export default function Hero({
 ],
   featured = [],
   showRightPanel = true,
-  brand = "Webify Tech",
-  aboutTop = "At Webify Tech, we deliver innovative software solutions, modern websites, and digital strategies that help businesses thrive.",
+  brand = "NextStac",
+  aboutTop = "At NextStac, we deliver innovative software solutions, modern websites, and digital strategies that help businesses thrive.",
   aboutBody = "We specialize in designing, developing, and scaling web, mobile, and cloud applications tailored to your goals and growth.",
   ctas = [
     { label: "Request a Proposal", href: "/proposalrequest", primary: true },
