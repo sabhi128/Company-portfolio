@@ -3,36 +3,33 @@ import { useEffect } from "react";
 
 /** Your logo images */
 const logos = [
-  "https://dripzclub.com/wp-content/uploads/2025/09/Screenshot-2025-08-29-175157.png",
-  "https://dripzclub.com/wp-content/uploads/2025/09/Screenshot-2025-08-29-175128.png",
-  "https://dripzclub.com/wp-content/uploads/2025/09/Screenshot-2025-08-29-175106.png",
-  "https://dripzclub.com/wp-content/uploads/2025/09/Screenshot-2025-08-29-175026.png",
-  "https://dripzclub.com/wp-content/uploads/2025/09/Screenshot-2025-08-29-175255.png",
-  "https://dripzclub.com/wp-content/uploads/2025/09/Screenshot-2025-08-29-175143.png",
-  "https://dripzclub.com/wp-content/uploads/2025/09/Screenshot-2025-08-29-175218.png",
-  "https://dripzclub.com/wp-content/uploads/2025/09/Screenshot-2025-08-29-175308.png",
-  "https://dripzclub.com/wp-content/uploads/2025/09/Screenshot-2025-08-29-175326-1.png",
-  "https://dripzclub.com/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-02-at-19.23.11_dc67e622-1.jpg",
+  "/Baskora.svg",
+  "/arcveil.svg",
+  "/editflows.svg",
+  "/kyn.svg",
+  "/lensory.svg",
+  "/lunari.svg",
+  "/shutter.svg",
+  "/streetwear.svg",
+  "/Baskora.svg",
+  "/arcveil.svg",
 ];
 
 /* Carousel */
-function MarqueeRow({ items, speed = 12 }) {
+function MarqueeRow({ items, speed = 10 }) {
   return (
     <div className="relative overflow-hidden group">
-      {/* fade edges */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-slate-50 to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-slate-50 to-transparent" />
 
       <div
         className="flex gap-16 items-center whitespace-nowrap will-change-transform animate-marquee"
         style={{ ["--speed"]: `${speed}s` }}
       >
         {[...items, ...items].map((src, i) => (
-          <div key={i} className="shrink-0 w-[200px] md:w-[240px] flex justify-center">
+          <div key={i} className="shrink-0 w-[200px]  flex justify-center">
             <img
               src={src}
               alt={`Client Logo ${i + 1}`}
-              className="max-h-20 object-contain"
+              className="max-h-44 object-contain"
             />
           </div>
         ))}

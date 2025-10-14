@@ -10,11 +10,10 @@ import {
 import GlobePins from "./GlobePins";
 
 export default function FooterIntro() {
-  const socials = [
-    { href: "/", label: "Instagram", Icon: FaInstagram },
-    { href: "/", label: "Facebook", Icon: FaFacebookF },
-    { href: "/", label: "LinkedIn", Icon: FaLinkedinIn },
-    { href: "/", label: "X (Twitter)", Icon: FaXTwitter },
+   const socials = [
+    { Icon: FaInstagram, href: "https://www.instagram.com/nextstac/", label: "Instagram", delay: 0 },
+    { Icon: FaFacebookF, href: "https://www.facebook.com/share/19pQDWkGYJ/?mibextid=wwXIfr", label: "Facebook", delay: 0.12 },
+    { Icon: FaLinkedinIn, href: "https://www.linkedin.com/company/nextstac/?viewAsMember=true", label: "LinkedIn", delay: 0.24 },
   ];
 
   const footerLinks = [
