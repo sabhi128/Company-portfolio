@@ -36,7 +36,6 @@ export default function AboutUs() {
          showRightPanel
         />
         <WhoWeAre/>
-
         <RecentClients />
         <TeamSection/>
         <FaqsSection />

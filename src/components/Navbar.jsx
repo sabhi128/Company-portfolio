@@ -111,7 +111,9 @@ export default function Navbar() {
     { label: "Google PPC Ads", to: "/services/google-ppc-ads" },
     { label: "Virtual Assistance", to: "/services/virtual-assistance" },
     { label: "Video Editing", to: "/services/video-editing" },
-    { label: "Graphic Designing", to: "/services/graphic-designing" }, // temp
+    { label: "Graphic Designing", to: "/services/graphic-designing" },
+        { label: "Ecommerce", to: "/services/ecommerce" }, 
+
   ];
 
   return (

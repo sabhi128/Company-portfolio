@@ -19,12 +19,12 @@ const TEAM = [
     name: "Muneeb Mustafa",
     role: "Head of E-commerce",
     bio: "Manages storefronts, listings, promotions, and performance to drive revenue and retention.",
-    img: "/munn.jpg",
+    img: "/mun.png",
   },
   {
     name: "Zuhair Ahmad Shad",
-    role: "Full-Stack Developer",
-    bio: "Leads a engineering squad; ships performant React/Node stacks with strong code quality and velocity.",
+    role: "Cheif Technology Officer",
+    bio: "Leading innovation, architecture, and technology strategy for scalable growth.",
     img: "/zuh.jpg",
   },
   
