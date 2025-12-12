@@ -366,101 +366,101 @@ const SEO = () => {
       />
 
       {/* BIG SPLIT SECTION — rewrite headline/paragraphs for SEO */}
-     <OnPageTechnicalSEO/>
-     <OffPageSEO/>
+      <OnPageTechnicalSEO />
+      <OffPageSEO />
       {/* WHO WE ARE — SEO angle */}
       <section className="w-full px-8 md:px-20 py-24 flex flex-col justify-center items-center relative overflow-hidden bg-gray-50">
-  <div className="max-w-[95em] w-full">
-    <div className="relative rounded-3xl overflow-hidden bg-white shadow-lg p-12 md:p-16">
-      <div className="relative z-10 flex flex-col gap-8 text-center">
-        {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          What Makes Us Different
-        </h2>
-        <p className="max-w-4xl mx-auto text-gray-600 text-base md:text-lg leading-relaxed">
-          Our strength lies in merging large-agency expertise with a boutique, 
-          hands-on approach. With the depth of resources to handle every aspect 
-          of SEO and content, we still treat every client with the focus and 
-          care of a dedicated partner. Guided by transparency, creativity, and 
-          collaboration, we ensure that when you work with us, you benefit from 
-          both scale and personalization.
-        </p>
-      </div>
+        <div className="max-w-[95em] w-full">
+          <div className="relative rounded-3xl overflow-hidden bg-white shadow-lg p-12 md:p-16">
+            <div className="relative z-10 flex flex-col gap-8 text-center">
+              {/* Heading */}
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                What Makes Us Different
+              </h2>
+              <p className="max-w-4xl mx-auto text-gray-600 text-base md:text-lg leading-relaxed">
+                Our strength lies in merging large-agency expertise with a boutique,
+                hands-on approach. With the depth of resources to handle every aspect
+                of SEO and content, we still treat every client with the focus and
+                care of a dedicated partner. Guided by transparency, creativity, and
+                collaboration, we ensure that when you work with us, you benefit from
+                both scale and personalization.
+              </p>
+            </div>
 
-      {/* Cards */}
-      <div className="grid md:grid-cols-2 gap-8 mt-12 text-left">
-        {/* Card 1 */}
-        <div className="p-6 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition">
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            Tailored, Boutique Support
-          </h3>
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            Work directly with seasoned SEO specialists who adapt strategies 
-            around your exact goals. Clear communication and dedicated account 
-            management mean you’ll never be left guessing.
-          </p>
+            {/* Cards */}
+            <div className="grid md:grid-cols-2 gap-8 mt-12 text-left">
+              {/* Card 1 */}
+              <div className="p-6 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  Tailored, Boutique Support
+                </h3>
+                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                  Work directly with seasoned SEO specialists who adapt strategies
+                  around your exact goals. Clear communication and dedicated account
+                  management mean you’ll never be left guessing.
+                </p>
+              </div>
+
+              {/* Card 2 */}
+              <div className="p-6 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  Holistic Marketing Expertise
+                </h3>
+                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                  By integrating branding insights, design knowledge, and marketing
+                  know-how into SEO, we align your search strategy with your broader
+                  business objectives—delivering a unified, powerful online presence.
+                </p>
+              </div>
+
+              {/* Card 3 */}
+              <div className="p-6 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  Transparency & Partnership
+                </h3>
+                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                  From detailed audits to regular updates, we ensure complete
+                  openness at every stage. Our approach builds trust, accountability,
+                  and long-lasting client partnerships.
+                </p>
+              </div>
+
+              {/* Card 4 */}
+              <div className="p-6 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  Innovation With Results
+                </h3>
+                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                  We evolve alongside the industry, refining tactics with each
+                  algorithm shift to achieve more than just rankings—driving traffic,
+                  ROI, and measurable business impact.
+                </p>
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="relative z-10 mt-16 text-center">
+              <a
+                href="/contact"
+                className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all duration-300 hover:scale-105"
+              >
+                Get a Free Proposal
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-
-        {/* Card 2 */}
-        <div className="p-6 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition">
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            Holistic Marketing Expertise
-          </h3>
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            By integrating branding insights, design knowledge, and marketing 
-            know-how into SEO, we align your search strategy with your broader 
-            business objectives—delivering a unified, powerful online presence.
-          </p>
-        </div>
-
-        {/* Card 3 */}
-        <div className="p-6 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition">
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            Transparency & Partnership
-          </h3>
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            From detailed audits to regular updates, we ensure complete 
-            openness at every stage. Our approach builds trust, accountability, 
-            and long-lasting client partnerships.
-          </p>
-        </div>
-
-        {/* Card 4 */}
-        <div className="p-6 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition">
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            Innovation With Results
-          </h3>
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            We evolve alongside the industry, refining tactics with each 
-            algorithm shift to achieve more than just rankings—driving traffic, 
-            ROI, and measurable business impact.
-          </p>
-        </div>
-      </div>
-
-      {/* CTA */}
-      <div className="relative z-10 mt-16 text-center">
-        <a
-          href="/contact"
-          className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all duration-300 hover:scale-105"
-        >
-          Get a Free Proposal
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-4 h-4"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" />
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 5l7 7-7 7" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
 
       {/* SERVICES GRID — now SEO services */}
@@ -624,9 +624,8 @@ const ServiceCard = ({ service }) => {
           </div>
           <div className="h-6 w-6 relative flex-shrink-0 ml-4">
             <div
-              className={`absolute h-full w-0.5 bg-gray-900 top-0 left-1/2 -translate-x-1/2 transition-transform duration-300 ${
-                isOpen ? 'rotate-0' : 'rotate-90'
-              }`}
+              className={`absolute h-full w-0.5 bg-gray-900 top-0 left-1/2 -translate-x-1/2 transition-transform duration-300 ${isOpen ? 'rotate-0' : 'rotate-90'
+                }`}
             />
             <div className="absolute h-0.5 w-full bg-gray-900 top-1/2 left-0 -translate-y-1/2" />
           </div>
@@ -673,9 +672,8 @@ const SmallServiceCard = ({ service }) => {
         </div>
         <div className="h-6 w-6 relative flex-shrink-0 ml-4">
           <div
-            className={`absolute h-full w-0.5 bg-gray-900 top-0 left-1/2 -translate-x-1/2 transition-transform duration-300 ${
-              isOpen ? 'rotate-0' : 'rotate-90'
-            }`}
+            className={`absolute h-full w-0.5 bg-gray-900 top-0 left-1/2 -translate-x-1/2 transition-transform duration-300 ${isOpen ? 'rotate-0' : 'rotate-90'
+              }`}
           />
           <div className="absolute h-0.5 w-full bg-gray-900 top-1/2 left-0 -translate-y-1/2" />
         </div>
