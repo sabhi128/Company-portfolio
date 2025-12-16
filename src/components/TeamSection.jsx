@@ -14,27 +14,13 @@ const TEAM = [
     img: "/awa.jpg",
   },
 
-  
-  {
-    name: "Muneeb Mustafa",
-    role: "Head of E-commerce",
-    bio: "Manages storefronts, listings, promotions, and performance to drive revenue and retention.",
-    img: "/mun.png",
-  },
   {
     name: "Zuhair Ahmad Shad",
     role: "Cheif Technology Officer",
     bio: "Leading innovation, architecture, and technology strategy for scalable growth.",
     img: "/zuh.jpg",
   },
-  
-  
-  {
-    name: "Muhammad Musa",
-    role: "Business Developer",
-    bio: "Prospecting, outreach, and discovery—turns opportunities into long-term client relationships.",
-    img: "/mus.jpg",
-  },
+
 ];
 
 export default function TeamSection() {
