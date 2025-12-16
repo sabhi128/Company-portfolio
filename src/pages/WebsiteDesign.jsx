@@ -22,7 +22,7 @@ const WebsiteDesign = () => {
       id: "website-design",
       title: "Website Design",
       paragraph:
-        "At Webify, we design purpose-built websites that reflect your brand and move visitors to action. Every layout, color, and component is chosen to support your goals.",
+        "At NextStac, we design purpose-built websites that reflect your brand and move visitors to action. Every layout, color, and component is chosen to support your goals.",
       richText: (
         <>
           <p className="text-sm md:text-base mb-4">
@@ -40,7 +40,7 @@ const WebsiteDesign = () => {
             We combine aesthetics with UX psychology—clear information hierarchy,
             consistent components, and accessible patterns—so the site is both
             memorable and easy to use. If you want a custom design that lifts your
-            brand and performance, Webify can help.
+            brand and performance, NextStac can help.
           </p>
         </>
       ),
@@ -213,9 +213,8 @@ const WebsiteDesign = () => {
             </div>
             <div className="h-6 w-6 relative flex-shrink-0 ml-4">
               <div
-                className={`absolute h-full w-0.5 bg-gray-900 top-0 left-1/2 -translate-x-1/2 transition-transform duration-300 ${
-                  isOpen ? 'rotate-0' : 'rotate-90'
-                }`}
+                className={`absolute h-full w-0.5 bg-gray-900 top-0 left-1/2 -translate-x-1/2 transition-transform duration-300 ${isOpen ? 'rotate-0' : 'rotate-90'
+                  }`}
               />
               <div className="absolute h-0.5 w-full bg-gray-900 top-1/2 left-0 -translate-y-1/2" />
             </div>
@@ -263,9 +262,8 @@ const WebsiteDesign = () => {
           </div>
           <div className="h-6 w-6 relative flex-shrink-0 ml-4">
             <div
-              className={`absolute h-full w-0.5 bg-gray-900 top-0 left-1/2 -translate-x-1/2 transition-transform duration-300 ${
-                isOpen ? 'rotate-0' : 'rotate-90'
-              }`}
+              className={`absolute h-full w-0.5 bg-gray-900 top-0 left-1/2 -translate-x-1/2 transition-transform duration-300 ${isOpen ? 'rotate-0' : 'rotate-90'
+                }`}
             />
             <div className="absolute h-0.5 w-full bg-gray-900 top-1/2 left-0 -translate-y-1/2" />
           </div>
@@ -452,7 +450,7 @@ const WebsiteDesign = () => {
         topText="Top Web Design Agency"
         heading="We create beautiful websites"
         subHeading="that drive business growth."
-        description="Webfiy Tech is a leading media and web design agency with
+        description="NextStac is a leading media and web design agency with
               extensive experience in crafting custom-designed and expertly
               developed websites. Our creative team takes pride in producing
               visually striking, user-friendly platforms that excel in both user
