@@ -76,7 +76,7 @@ export default function RequestProposal() {
           </div>
 
           <p className="mt-3 text-xs text-slate-400">
-            Powered by Calendly — we respect your privacy and never share your info.
+            Powered by Calendly - we respect your privacy and never share your info.
           </p>
         </div>
 
@@ -115,7 +115,7 @@ export default function RequestProposal() {
               <p className="text-sm text-slate-200">
                 “Nextstac translated our vision into a clean, high-converting site. Smooth process, on time, on budget.”
               </p>
-              <div className="mt-3 text-xs text-slate-400">— Sarah M., Head of Growth</div>
+              <div className="mt-3 text-xs text-slate-400"> - Sarah M., Head of Growth</div>
             </div>
 
             {/* Alternatives */}

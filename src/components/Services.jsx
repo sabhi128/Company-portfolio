@@ -131,7 +131,7 @@ export default function Services() {
     {
       title: "Digital Marketing",
       intro:
-        "Campaigns engineered for growth—full-funnel strategy across paid, social, and email.",
+        "Campaigns engineered for growth - full-funnel strategy across paid, social, and email.",
       more:
         "Our team crafts compelling creatives and landing pages, manages ad spend with precision, and leverages analytics to scale ROI. Whether performance marketing or brand awareness, we ensure your message resonates.",
       tags: ["Performance", "Social Ads", "Email/SMS", "Landing Pages", "Analytics"],
@@ -170,14 +170,14 @@ export default function Services() {
       intro:
         "Reliable remote support to keep your operations organized and moving.",
       more:
-        "Our virtual assistants can handle inbox management, CRM hygiene, research, scheduling, reporting, and more—giving you time to focus on strategic growth.",
+        "Our virtual assistants can handle inbox management, CRM hygiene, research, scheduling, reporting, and more - giving you time to focus on strategic growth.",
       tags: ["Admin", "Research", "CRM", "Scheduling", "Reporting"],
       primary: { label: "Learn More", href: "/services/virtual-assistance" },
     },
     {
       title: "Video Editing",
       intro:
-        "Scroll-stopping edits for ads, social, and brand stories—optimized per platform.",
+        "Scroll-stopping edits for ads, social, and brand stories - optimized per platform.",
       more:
         "From short-form TikTok/Reels to polished long-form YouTube edits, we cover cutting, captions, color grading, motion graphics, and sound design.",
       tags: ["Short-form", "Long-form", "Color", "Motion Graphics", "Captions"],
@@ -253,7 +253,7 @@ export default function Services() {
             </div>
           </aside>
 
-          {/* RIGHT cards — gate the whole grid for TBT savings */}
+          {/* RIGHT cards - gate the whole grid for TBT savings */}
           <div className="lg:col-span-2 relative z-10">
             <LazyMount minHeight={280}>
               <Suspense fallback={null}>
