@@ -21,12 +21,12 @@ export default function RequestProposal() {
 
   return (
     <main className=" bg-[#0B1220] text-white">
-            <Navbar/>
+      <Navbar />
 
       {/* Header strip */}
       <div className="border-b pt-40 border-white/10 text-sm">
         <div className="mx-auto max-w-7xl px-4 py-2 flex items-center gap-2 text-slate-300">
-          
+
           <span className="ml-auto text-slate-400">Avg. response: &lt; 2 hrs</span>
         </div>
       </div>
@@ -128,7 +128,7 @@ export default function RequestProposal() {
                 <a href="mailto:mubashir@nextstac.com" className="rounded-xl border border-white/10 px-3 py-2 hover:bg-white/10">
                   mubashir@nextstac.com
                 </a>
-                <a href="https://wa.me/123456789" target="_blank" rel="noreferrer" className="rounded-xl border border-white/10 px-3 py-2 hover:bg-white/10">
+                <a href="https://wa.me/923281610706" target="_blank" rel="noreferrer" className="rounded-xl border border-white/10 px-3 py-2 hover:bg-white/10">
                   WhatsApp
                 </a>
               </div>
@@ -191,7 +191,7 @@ export default function RequestProposal() {
           </div>
         </div>
       </div>
-      <FooterIntro/>
+      <FooterIntro />
     </main>
   );
 }

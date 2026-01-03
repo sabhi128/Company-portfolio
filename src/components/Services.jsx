@@ -153,8 +153,7 @@ export default function Services() {
       more:
         "From brand kits and illustrations to marketing collaterals and social packs, our designers craft assets that tell your story consistently across platforms.",
       tags: ["Brand Kit", "Social Creatives", "Print", "Illustration"],
-      // TEMP: you don't have /services/graphic-designing route yet.
-      primary: { label: "Learn More", href: "/services/UIUX" },
+      primary: { label: "Learn More", href: "/services/graphic-designing" },
     },
     {
       title: "Google PPC Ads",
@@ -207,36 +206,36 @@ export default function Services() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-14">
           {/* LEFT sticky info panel (sticky only on lg+) */}
           <aside className="col-span-1 self-start relative z-0 lg:sticky lg:top-24 lg:-ml-6">
-  <div className="space-y-4 bg-[#FAF9F6]">
-    <div className="text-xs uppercase tracking-wide text-slate-500">
-      What We Do
-    </div>
-    <p className="text-xl font-semibold text-slate-900">
-      Practical & creative solutions to help your business grow
-    </p>
+            <div className="space-y-4 bg-[#FAF9F6]">
+              <div className="text-xs uppercase tracking-wide text-slate-500">
+                What We Do
+              </div>
+              <p className="text-xl font-semibold text-slate-900">
+                Practical & creative solutions to help your business grow
+              </p>
 
-    <div className="overflow-hidden border border-slate-200 bg-white shadow-md">
-      <div className="relative w-full h-60">
-        <img
-          src={`${base}?${query}&w=1200`}
-          srcSet={srcSet}
-          sizes="(min-width: 1024px) 384px, 100vw"
-          alt="Modern office workspace"
-          className="w-full h-full object-cover"
-          loading="lazy"
-          decoding="async"
-        />
-      </div>
-      <div className="p-5">
-        
-        <Link
-                  to="/"
-                  className="text-black"
-                >
-                  Read our case
-                </Link>
-      </div>
-    </div>
+              <div className="overflow-hidden border border-slate-200 bg-white shadow-md">
+                <div className="relative w-full h-60">
+                  <img
+                    src={`${base}?${query}&w=1200`}
+                    srcSet={srcSet}
+                    sizes="(min-width: 1024px) 384px, 100vw"
+                    alt="Modern office workspace"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div className="p-5">
+
+                  <Link
+                    to="/about"
+                    className="text-black"
+                  >
+                    Read our case
+                  </Link>
+                </div>
+              </div>
 
 
               <div className="flex items-center gap-3">
